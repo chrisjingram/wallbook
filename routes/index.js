@@ -5,6 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index2', { title: 'Wallbook' });
 });
+router.get('/Signup', function(req, res, next) {
+  res.render('index', { title: 'Wallbook' });
+});
 
 router.get('/viewbook', function(req,res,next){
 	res.render('viewbook',{});
