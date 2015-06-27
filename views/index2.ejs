@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wallbook</title>
+	<title>BookTaster</title>
 	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Montserrat:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -9,29 +9,45 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel='stylesheet' href='/stylesheets/style.css'>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+
+		$(function(){
+
+			$("#learnmore").click(function(e){
+				e.preventDefault();
+				$('html, body').animate({scrollTop: $("#content1").offset().top}, 500);
+			});
+
+		});
+
+	</script>
 </head>
 
 <body>
 
-	<header>
-		<div class="container">
-			<h1 class="logo">BookTaster</h1>
-			<div id="menubar"><a href="/Signup"> Customer Sign Up</a></div>
-		</div>
-	</header>
-
 	<section id="big">
+		<div class="signin"><a class="pull-right" href="/Signup">Customer Sign in</a></div>
 		<div class="container">
 			<h2>BookTaster</h2>
 			<p class="strap">What type and format of ebooks do readers need at the moment?</p>
-			<a class="learnmore" href="#">Learn more</a>
+			<a id="learnmore" class="bigbutton" href="#">Learn more</a>
 
 		</div>
 	</section>
 
-	<section id="content">
+	<section id="content1" class="content">
 		<div class="container">
-			<p class="biginfo">WallBook is brings readers,authors and publishers together in order to give better service to one another. It also helps to provide real-time information about what books in what format a user wants at the moment. This enables both the authors and publishers to provide what books that readers need and  are ready to purchase..</p>
+			<p class="biginfo">BookTaster brings readers, authors and publishers together in order to give better service to one another. It also helps to provide analytical information about what books in what format a user wants at the moment. This enables both the authors and publishers to find out what books that readers need and are ready to purchase.</p>
+		</div>
+	</section>
+	<section id="content2" class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3"><img src="/images/qrcode.jpg" class="img-responsive"></div>
+				<div class="col-sm-9">
+					<p class="left">Users will scan QR codes presented on bookshelf style wallpapers in public places, giving them the option to read a <strong>taster</strong> of a book. They then rate what they have read and indicate whether they would like to buy the book. The information gathered from this process can provide publishers with insightful information and revenue can be generated through affiliate links to book sellers</p>
+				</div>
+			</div>
 			<h1> Our Services</h1>
 			<li>Mobile book Store</li>
 			<li> Physical E-library</li>

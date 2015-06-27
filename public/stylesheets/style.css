@@ -22,6 +22,7 @@ header h1{
 }
 
 .bigbutton{
+	text-decoration: none;
 	font-family: 'Bitter', serif;
 	font-weight: 700;
 	font-size: 20px;
@@ -32,11 +33,12 @@ header h1{
 	color: #fff;
 	background: transparent;
 }
-.bigbutton:hover{
+.bigbutton:hover, .bigbutton:active{
 	text-decoration: none;
 	background: white;
 	color: black;
 }
+
 .bigbutton-black{
 	border-color: black;
 	color: black;
@@ -49,9 +51,18 @@ header h1{
 section#big{
 	background: url(../images/bookshelf-dark.png);
 	background-size: 100%;
-	padding: 5% 0 20%;
+	padding: 0 0 20%;
 	text-align: center;
 }
+	section#big .signin{
+		padding: 20px;
+		margin-bottom: 5%;
+	}
+	section#big .signin a{
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+	}
 	section#big h2{
 		font-family: 'Bitter', serif;
 		font-weight: 700;
@@ -67,12 +78,19 @@ section#big{
 		margin-bottom: 50px;
 	}
 
-	section#content{
+	section.content{
 		padding: 50px 0;
 	}
 
-	section#content p.biginfo{
+	section.content p{
 		font-size: 25px;
 		text-align: center;
 		font-family: 'Lato', sans-serif;
+		margin-bottom: 20px;
+	}
+	section.content p.left{
+		text-align: left;
+	}
+	section#content2{
+		background: #eee;
 	}

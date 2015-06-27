@@ -1,0 +1,40 @@
+<% include partials/viewbook-head.ejs %>
+
+	<script>
+		$(function(){
+
+			$("#whynot").hide();
+
+			$("#donotbuy").click(function(e){
+				e.preventDefault();
+				$("#whynot").slideDown();
+			});
+
+		});
+	</script>
+
+	<section id="booksample">
+		<p>It was the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something; and she heard it muttering to itself 'The Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure as ferrets are ferrets! Where can I have dropped them, I wonder?' Alice guessed in a moment that it was looking for the fan and the pair of white kid gloves, and she very good-naturedly began hunting about for them, but they were nowhere to be seen--everything seemed to have changed since her swim in the pool, and the great hall, with the glass table and the little door, had vanished completely.</p>
+		<p>Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, 'Why, Mary Ann, what are you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!' And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.</p>
+		<p>'He took me for his housemaid,' she said to herself as she ran. 'How surprised he'll be when he finds out who I am! But I'd better take him his fan and gloves--that is, if I can find them.' As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name 'W. RABBIT' engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.</p>
+		<p>'How queer it seems,' Alice said to herself, 'to be going messages for a rabbit! I suppose Dinah'll be sending me on messages next!' And she began fancying the sort of thing that would happen: '"Miss Alice! Come here directly, and get ready for your walk!" "Coming in a minute, nurse! But I've got to see that the mouse doesn't get out." Only I don't think,' Alice went on, 'that they'd let Dinah stop in the house if it began ordering people about like that!'</p>
+	</section>
+
+	<section id="ratebook">
+		
+		<div class="container">
+			<div class="buy-buttons">
+				<a id="buy" href="http://www.amazon.com/Adventures-Wonderland-Through-Looking-Glass-Classics/dp/0553213458/ref=sr_1_1?s=books&ie=UTF8&qid=1435435882&sr=1-1&keywords=alice+in+wonderland&pebp=1435435883399&perid=0DV67GSEAR6PZYCVQ36V" class="bigbutton bigbutton-black">Buy Book</a>
+				<button id="donotbuy" class="bigbutton bigbutton-black">I Do Not Want to Buy</button>
+			</div>
+			<form class="form-horizontal" id="whynot">
+				<p class="form-text">Explain why: </label>
+				<textarea class="form-control" name="explanation" id="explanation"></textarea>
+				<button id="btn-sendwhynot" class="bigbutton bigbutton-black">Send</button> 
+			</form>
+		</div>
+			
+		</form>
+	</section>
+
+<% include partials/viewbook-foot.ejs %>

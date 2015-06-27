@@ -13,4 +13,8 @@ router.get('/viewbook', function(req,res,next){
 	res.render('viewbook',{});
 });
 
+router.get('/viewbook-released',function(req,res,next){
+	res.render('viewbook-released',{});
+})
+
 module.exports = router;

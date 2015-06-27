@@ -3,8 +3,11 @@ header{
 }
 header h1{
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	color: #000;
+}
+header img{
+	width: 120px;
 }
 
 section{
@@ -16,6 +19,12 @@ section#viewbooksample{
 	background: url(../images/bookshelf-dark.png);
 	background-size: 100%;
 }
+
+	section#viewbooksample h3{
+		color: #fff;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 
 section#ratebook{
 	background: white;
@@ -31,13 +40,14 @@ section#booksample{
 	font-size: 18px;
 	font-family: 'Bitter', serif;
 	padding: 30px;
+	background: #eee;
 }
 
 .rating{
 	margin-bottom: 20px;
 }
 
-p.iwould{
+p.form-text{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 25px;
@@ -71,3 +81,23 @@ button#review-submit{
 	display: block;
 	margin: 0 auto;
 }
+
+#whynot{
+	max-width: 500px;
+	margin: 0 auto;
+}
+	#whynot textarea{
+		margin-bottom: 20px;
+	}
+
+.buy-buttons{
+	margin-bottom: 20px;
+	width: 250px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+	.buy-buttons a{
+		/*margin: 0 auto;*/
+		display: block;
+		margin-bottom: 10px;
+	}

@@ -1,57 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Wallbook</title>
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Montserrat:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
-
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel='stylesheet' href='/stylesheets/style.css'>
-	<link rel="stylesheet" href="/stylesheets/viewbook.css">
-
-	<script>
-		$(function(){
-
-			$("#booksample").hide();
-			$("#btn-hidebooksample").hide();
-
-			$("#btn-viewbooksample").click(function(e){
-				e.preventDefault();
-				$("#booksample").slideDown();
-				$(this).hide();
-				$("#btn-hidebooksample").show();
-			});
-
-			$("#btn-hidebooksample").click(function(e){
-				$("#booksample").slideUp();
-				$(this).hide();
-				$("#btn-viewbooksample").show();
-			})
-
-			$("#review-submit").click(function(e){
-				e.preventDefault();
-			});
-
-		})
-
-	</script>
-</head>
-
-<body>
-	<header>
-		<img src="/images/logo.png">
-	 	<h1 class="logo">BookTaster</h1>
-	</header>
-	<section id="viewbooksample">
-		<div class="container">
-			<a id="btn-viewbooksample" class="bigbutton" href="#">View Book Sample</a>
-			<a id="btn-hidebooksample" class="bigbutton" href="#">Hide Book Sample</a>
-		</div>
-	</section>
+<% include partials/viewbook-head.ejs %>
 
 	<section id="booksample">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus in enim iaculis facilisis in in diam. Etiam dignissim arcu in velit consectetur, sed ornare arcu gravida. Ut erat mauris, sagittis ac quam eleifend, fermentum fringilla odio. Pellentesque vestibulum interdum tortor quis hendrerit. Ut eget mi sapien. Phasellus non dui ac augue venenatis sollicitudin ut nec urna. Aliquam et aliquet metus. Aliquam vestibulum tempus aliquam. Fusce id enim ac dui faucibus bibendum in vel neque. Vivamus ut imperdiet diam. Cras scelerisque tellus a tincidunt maximus. Pellentesque sed est et lectus viverra consectetur a eu felis. Curabitur porttitor varius pellentesque. Maecenas sed ipsum quis arcu lobortis suscipit. Cras sem lectus, eleifend sed purus ac, scelerisque accumsan erat. Proin porttitor enim eu justo auctor, id aliquam elit lobortis.</p>
@@ -67,15 +14,15 @@
 					<div class="col-xs-3"><label class="control-label" for="rating">Rating out of 5</label></div>
 					<div class="col-xs-9">
 						<select class="form-control" id="rating">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="4">4</option>
+							<option value="3">3</option>
+							<option value="2">2</option>
+							<option value="1">1</option>
 						</select>
 					</div>
 				</div>
-				<p class="iwould">I would buy this book as...</p>
+				<p class="form-text">I would buy this book as...</p>
 				<div class="radio-buttons">
 					<div class="row">
 						<div class="col-xs-2"><input type="checkbox" id="checkbox-ebook"></div>
@@ -102,4 +49,4 @@
 		</form>
 	</section>
 
-</body>
+<% include partials/viewbook-foot.ejs %>
