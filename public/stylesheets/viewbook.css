@@ -1,0 +1,73 @@
+header{
+	text-align: center;
+}
+header h1{
+	text-align: center;
+	font-size: 60px;
+	color: #000;
+}
+
+section{
+	padding: 40px 0;
+	text-align: center;
+}
+
+section#viewbooksample{
+	background: url(../images/bookshelf-dark.png);
+	background-size: 100%;
+}
+
+section#ratebook{
+	background: white;
+}
+
+#review{
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+section#booksample{
+	font-size: 18px;
+	font-family: 'Bitter', serif;
+	padding: 30px;
+}
+
+.rating{
+	margin-bottom: 20px;
+}
+
+p.iwould{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.radio-buttons{
+	margin-bottom: 20px;
+	max-width: 250px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.radio-buttons .radio-label{
+	text-align: left;
+	color: #fff;
+	font-family: 'Bitter', serif;
+	font-weight: 400 !important;
+	font-size: 15px;
+}
+
+.radio-buttons .row{
+	background: #3d2d4a;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+button#review-submit{
+	display: block;
+	margin: 0 auto;
+}
