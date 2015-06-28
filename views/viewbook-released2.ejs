@@ -1,0 +1,47 @@
+<% include partials/viewbook-head.ejs %>
+
+	<section id="viewbooksample">
+		<div class="container">
+			<h3>1984</h3>
+			<a id="btn-viewbooksample" class="bigbutton" href="#">View Book Sample</a>
+			<a id="btn-hidebooksample" class="bigbutton" href="#">Hide Book Sample</a>
+		</div>
+	</section>
+
+	<script>
+		$(function(){
+
+			$("#whynot").hide();
+
+			$("#donotbuy").click(function(e){
+				e.preventDefault();
+				$("#whynot").slideDown();
+			});
+
+		});
+	</script>
+
+	<section id="booksample">
+		<p>He must, he thought, have been ten or eleven years old when his mother had disappeared. She was a tall, statuesque, rather silent woman with slow movements and magnificent fair hair. His father he remembered more vaguely as dark and thin, dressed always in neat dark clothes (Winston remembered especially the very thin soles of his father's shoes) and wearing spectacles. The two of them must evidently have been swallowed up in one of the first great purges of the fifties. </p>
+		<p>At this moment his mother was sitting in some place deep down beneath him, with his young sister in her arms. He did not remember his sister at all, except as a tiny, feeble baby, always silent, with large, watchful eyes. Both of them were looking up at him. They were down in some subterranean place -- the bottom of a well, for instance, or a very deep grave -- but it was a place which, already far below him, was itself moving downwards. They were in the saloon of a sinking ship, looking up at him through the darkening water. There was still air in the saloon, they could still see him and he them, but all the while they were sinking down, down into the green waters which in another moment must hide them from sight for ever. He was out in the light and air while they were being sucked down to death, and they were down there because he was up here. He knew it and they knew it, and he could see the knowledge in their faces. There was no reproach either in their faces or in their hearts, only the knowledge that they must die in order that he might remain alive, and that this was part of the unavoidable order of things. </p>
+		<p>He could not remember what had happened, but he knew in his dream that in some way the lives of his mother and his sister had been sacrificed to his own. It was one of those dreams which, while retaining the characteristic dream scenery, are a continuation of one's intellectual life, and in which one becomes aware of facts and ideas which still seem new and valuable after one is awake. The thing that now suddenly struck Winston was that his mother's death, nearly thirty years ago, had been tragic and sorrowful in a way that was no longer possible. Tragedy, he perceived, belonged to the ancient time, to a time when there was still privacy, love, and friendship, and when the members of a family stood by one another without needing to know the reason. His mother's memory tore at his heart because she had died loving him, when he was too young and selfish to love her in return, and because somehow, he did not remember how, she had sacrificed herself to a conception of loyalty that was private and unalterable. Such things, he saw, could not happen today. Today there were fear, hatred, and pain, but no dignity of emotion, no deep or complex sorrows. All this he seemed to see in the large eyes of his mother and his sister, looking up at him through the green water, hundreds of fathoms down and still sinking. </p>
+	</section>
+
+	<section id="ratebook">
+		
+		<div class="container">
+			<div class="buy-buttons">
+				<p>Love it! Buy book as...</p>
+				<a id="buyebook" href="http://www.amazon.co.uk/Nineteen-Eighty-Four-George-Orwell-ebook/dp/B002RI991O" class="bigbutton bigbutton-black">eBook</a>
+				<a id="buy" href="http://www.amazon.co.uk/Nineteen-Eighty-Four-George-Orwell/dp/0141393041" class="bigbutton bigbutton-black">Hard Copy</a>
+				<a id="buyaudio" href="http://www.audible.com/pd/Classics/1984-Audiobook/B002V19RO6/ref=a_search_c4_1_1_srTtl" class="bigbutton bigbutton-black">Audio book</a>
+
+				
+			</div>
+			<a id="donotbuy" class="bigbutton bigbutton-black" href="/viewbook-released"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Nah, not for me</a>
+		</div>
+			
+		</form>
+	</section>
+
+<% include partials/viewbook-foot.ejs %>

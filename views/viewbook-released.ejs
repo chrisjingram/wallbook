@@ -1,5 +1,13 @@
 <% include partials/viewbook-head.ejs %>
 
+	<section id="viewbooksample">
+		<div class="container">
+			<h3>Alice's Adventures in Wonderland</h3>
+			<a id="btn-viewbooksample" class="bigbutton" href="#">View Book Sample</a>
+			<a id="btn-hidebooksample" class="bigbutton" href="#">Hide Book Sample</a>
+		</div>
+	</section>
+
 	<script>
 		$(function(){
 
@@ -24,14 +32,14 @@
 		
 		<div class="container">
 			<div class="buy-buttons">
-				<a id="buy" href="http://www.amazon.com/Adventures-Wonderland-Through-Looking-Glass-Classics/dp/0553213458/ref=sr_1_1?s=books&ie=UTF8&qid=1435435882&sr=1-1&keywords=alice+in+wonderland&pebp=1435435883399&perid=0DV67GSEAR6PZYCVQ36V" class="bigbutton bigbutton-black">Buy Book</a>
-				<button id="donotbuy" class="bigbutton bigbutton-black">I Do Not Want to Buy</button>
+				<p>Love it! Buy book as...</p>
+				<a id="buyebook" href="http://www.amazon.co.uk/Alice-Wonderland-Lewis-Carroll-ebook/dp/B003A83VUK" class="bigbutton bigbutton-black">eBook</a>
+				<a id="buy" href="http://www.amazon.com/Adventures-Wonderland-Through-Looking-Glass-Classics/dp/0553213458/ref=sr_1_1?s=books&ie=UTF8&qid=1435435882&sr=1-1&keywords=alice+in+wonderland&pebp=1435435883399&perid=0DV67GSEAR6PZYCVQ36V" class="bigbutton bigbutton-black">Hard Copy</a>
+				<a id="buyaudio" href="http://www.audible.co.uk/pd/Children/Alices-Adventures-in-Wonderland-Audiobook/B004EVU7B8/ref=a_search_c4_1_1_srTtl" class="bigbutton bigbutton-black">Audio book</a>
+
+				
 			</div>
-			<form class="form-horizontal" id="whynot">
-				<p class="form-text">Explain why: </label>
-				<textarea class="form-control" name="explanation" id="explanation"></textarea>
-				<button id="btn-sendwhynot" class="bigbutton bigbutton-black">Send</button> 
-			</form>
+			<a id="donotbuy" class="bigbutton bigbutton-black" href="/viewbook-released2"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Nah, not for me</a>
 		</div>
 			
 		</form>
