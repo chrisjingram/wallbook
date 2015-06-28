@@ -12,8 +12,10 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 app.set('port', port);
+app.set('ipaddr', server_ip_address);
 
 /**
  * Create HTTP server.
@@ -25,7 +27,9 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, server_ip_address, function(){
+  console.log((new Date()) + ' Server is listening on port ' + port + '. IP Address: ' + server_ip_address);
+});
 server.on('error', onError);
 server.on('listening', onListening);
 
