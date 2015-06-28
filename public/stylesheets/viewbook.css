@@ -30,6 +30,13 @@ section#ratebook{
 	background: white;
 }
 
+section#remindme{
+	background: #eee;
+}
+section#remindme .container{
+	max-width: 400px;
+}
+
 #review{
 	max-width: 600px;
 	margin: 0 auto;
